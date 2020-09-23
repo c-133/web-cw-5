@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  font-weight: bold;
+  font-family: 'Amiri', serif;
+
 }
 html {
   height: 100%;
@@ -19,12 +22,21 @@ body {
 /* ---------------%اجعل الشريط الجانبي بطول 100------------- */
 .side-bar {
   /* flex */
+  display: flex;
+  height: 100%;
+}
+.side-bar h2 {
+  font-weight: bold;
+  font-size: 30px;
 }
 
 /* ------------------(العنوان: المطلوب #2)------------------ */
 /* ------------------%اجعل العنوان بعرض 100----------------- */
 .head-ul {
   /* flex */
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 .header {
   width: 100%;
@@ -59,12 +71,16 @@ body {
 /* -------اجعل المسافة بين العناصر متساوية نفس الصورة------- */
 
 .menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-around;
   background-color: rgb(255, 255, 255);
   padding: 25px;
   height: 600px;
   width: 700px;
   margin-top: 50px;
+
   border-radius: 20px;
   /* flex */
 }
@@ -97,6 +113,7 @@ img {
   margin-left: 40px;
   align-self: center;
   justify-content: center;
+  font-weight: bold;
 }
 h2 {
   margin-right: 25px;
